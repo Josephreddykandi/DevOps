@@ -48,6 +48,7 @@ In *part-01* we create Docker image on ansible server through Jenkins job and pu
           - `docker build -t valaxy_demo .`
 	      - `docker tag valaxy_demo valaxy/valaxy_demo`
           - `docker push valaxy/valaxy_demo`
+	  - `docker login -u username -p 'passowrd' `
           - `docker rmi valaxy_demo valaxy/valaxy_demo`
               
 1. Login to Docker host and check images and containers. (no images and containers)
