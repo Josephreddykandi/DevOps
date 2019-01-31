@@ -143,5 +143,7 @@ Lets modify jenkins job which was created in *Part-01* as below.
         - `docker rmi $JOB_NAME:v1.$BUILD_ID valaxy/$JOB_NAME:v1.$BUILD_ID valaxy/$JOB_NAME:latest` 
    - *in play book you need to modify the docker run command*
    	- `docker run -d --name valaxy_demo -p 8090:8080 valaxy/job name:latest` 
+	
+	- *valaxy as a Docker hub username*
 ##### References
 [1] - [Jenkins Docs - Building Software Projects](https://wiki.jenkins.io/display/JENKINS/Building+a+software+project)
