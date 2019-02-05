@@ -59,6 +59,18 @@ service is not starting?
 Unable to access nexus URL?
 - make sure port 8081 is opened in security group. 
 
+### Configuration of Nexus with Jenkins. 
+
+- need to install the Nexus Platform plugin in Jenkins.
+- then add configure the Nexus server in `Manage jenkins --> Configure Systems`
+- in Sonatype Nexus Give the information of the server. 
+     - Display Name: give whatever you want
+     - Server ID: give whatever you want
+     - Server URL: give the Nexus URL  http://<IP Address>:8081 
+     - Credentials: here you can give the default user/password for Nexus(admin/admin123) or Give created user/passowrd. 
+ - after that `Test Connection` if it sucessed to you can move the artifacts to Nexus. 
+ 
+
 ### Next Steps
 - [x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
 - [x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
