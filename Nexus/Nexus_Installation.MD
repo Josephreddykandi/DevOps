@@ -68,7 +68,7 @@ Unable to access nexus URL?
      - Server ID: give whatever you want
      - Server URL: give the Nexus URL  http://<IP Address>:8081 
      - Credentials: here you can give the default user/password for Nexus(admin/admin123) or Give created user/passowrd. 
- - after that `Test Connection` if it sucessed to you can move the artifacts to Nexus. 
+ - after that click on `Test Connection` if it sucessed you can able to move the artifacts to Nexus. 
  
 
 ### Next Steps
