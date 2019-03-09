@@ -1,0 +1,25 @@
+what is git tags? it is representation of the version of the code. (they allow you to identify specific release versions of your code)
+when we will use git tags? for releasing purpose we use tags. 
+how many types of git tags ? annotated and lightweight.Both of them will allow you to refer to a specific commit in a repository, but they differ in the amount of metadata they can store.
+what is lightweight git tag? How to create light weight git tag?
+Lightweight tags are essentially "bookmarks" to a commit, they are just a name and a pointer to a commit, useful for creating quick links to relevant commits. 
+$ git tag v1.0.0
+what is annotated git tag ? How to create annotated git tag?
+Annotated tags store extra metadata such as author name, release notes, tag-message, and date as full objects in the Git database. All this data is important for a public release of your project.
+$ git tag -a v1.0.0    ---(-a  annotated tag )
+what is difference between lightweight tag and annotated tag? in lightweight we just give the tag id but in annotated tag we can mention the authore details tag details and all those meta data. 
+how to check all  commits in local? git log
+how to see particular tag information? git show tagname
+how to create a tag for older commits ? git tag v0.1 <previous commit hash number> -- in repository (Github) it shows old commit date when the commit happened. it doesn't show the present tag date.  
+how to check a particular tag? 
+how to check git log with pretty mode? git log --pretty=online
+how to list out all tags? git tag -l 
+how to get all tags to local form remote repository?
+how to push tags to remote repository? git push origin master <tagname> , push all tags from local to remote -- git push origin master --tags
+how to delete a tag in local? how to delete all tags at a time in local? git tag -d <tag value>
+how to delete a tag in remote repository? how to delete all tags at a time in remote repository? git push origin :refs/tags/<tag value>
+
+
+we have 3 tags in local and those tags also pushed to remote. 
+bi mistake when we delete the tags in local, how can we get those deleted tags. 
+use git fetch --it will pull the recent once from remote to local. 
