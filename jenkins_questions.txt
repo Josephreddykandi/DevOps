@@ -48,7 +48,7 @@
 
 11. what is master/slave architecture? what is the use of master/slave? 
 	--we can't burden the master to run the all jobs so here we are using master/slave configuration, we can assign the jobs on slave and slave will perform the tasks. 
-12. How many we can connect the slaves? 
+12. How many ways we can connect the slaves? 
 
 	-- via SSH 
 	-- java Web start 
